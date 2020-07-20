@@ -1,0 +1,248 @@
+﻿* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff, #eec);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #808040;
+    color: #ffe;
+    padding: 1em;
+
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffe;
+}
+
+nav {
+    background-color: #bb8;
+    color: #ffe;
+    font-size: 1.7em;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffe;
+}
+
+nav :link {
+    color: #ffe;
+}
+
+nav :visited {
+    color: #eed;
+}
+
+nav :hover {
+    color: #ddc;
+}
+
+#home-picture {
+    height: 300px;
+    width: auto;
+    background-image: url("./Chess1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#chess-htp-image {
+    height: auto;
+    float: right;
+    max-width: 50%;
+}
+
+main {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 1em;
+    padding: 1em;
+}
+
+main h1 {
+    margin-bottom: .5em;
+}
+
+main h2 {
+    margin-bottom: .5em;
+}
+
+main h3 {
+    margin-bottom: .5em;
+    margin-top: 1em;
+}
+
+#left {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid black;
+}
+
+#right li {
+    padding: 1em;
+}
+
+table {
+    margin: 1.5em 4px 1em 4px;
+    padding: 0;
+    background-color: #eec;
+    font-family: sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: .5em;
+    background-color: #995;
+    color: #ffe;
+    text-align: left;
+    border: 2px solid black;
+}
+
+td {
+    padding: .2em;
+    border: 2px solid black;
+}
+
+td ul {
+    padding-left: 1.25em;
+}
+
+tr:nth-of-type(2n+1) {
+    background-color: #ffe;
+}
+
+footer {
+    text-align: center;
+    margin: 2em;
+    padding: .5em;
+    font-style: italic;
+}
+
+#chess-history-image {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    width: 400px;
+    height: 225px;
+    margin: auto;
+    margin: 1em;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        padding: .5em;
+        border-bottom: none;
+    }
+
+    table {
+        font-size: 1.2em;
+    }
+
+    #chess-history-image {
+        float: right;
+        max-width: 50%;
+    }
+
+    #chess-htp-image {
+
+        max-width: 30%;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+    
+}
+
+@media (min-width: 900px) {
+
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    nav ul {
+        justify-content: left;
+    }
+
+    nav li {
+        padding: .5em 1em;
+    }
+
+    #home-main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 45% auto;
+    }
+
+    #fragment-id-links {
+        display: none;
+    }
+
+    #left {
+        grid-column: 1/2;
+        border-bottom: none;
+        border-right: 1px solid black;
+        margin:0;
+        padding:0;
+    }
+
+    #right {
+        margin-left: 1em;
+        grid-column: 2/3;
+    }
+
+    table {
+        width: 80%;
+        margin: auto;
+    }
+
+    
+
+    @media (min-height: 600px) {
+        #home-picture {
+            height: 500px;
+        }
+    }
+
+}
